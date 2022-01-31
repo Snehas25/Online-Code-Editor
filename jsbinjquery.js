@@ -23,10 +23,7 @@ $(document).ready(function(){
     head.append(cssLink);
 
     var jsCode = $("#js").val();
-
     var js ='<script>'+jsCode+'<\/script>' ; 
-
-    // following part is not working
     var content = $('#preview').contents();
     content.find('head').append('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"><\/script>' );             
     content.find('body').append(js );
